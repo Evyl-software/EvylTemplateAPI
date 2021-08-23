@@ -1,7 +1,7 @@
-using Application.Command.Interfaces;
-using Application.PlaceOrder.Implementation;
-using Application.PlaceOrder.Interfaces;
-using Application.Query.Implementation;
+using Application.ProductServices.Interfaces;
+using Application.OrderServices.Implementation;
+using Application.OrderServices.Interfaces;
+using Application.ProductServices.Implementation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

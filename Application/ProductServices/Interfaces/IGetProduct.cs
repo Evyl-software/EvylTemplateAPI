@@ -1,6 +1,6 @@
 ﻿using Domain.Models;
 
-namespace Application.Command.Interfaces
+namespace Application.ProductServices.Interfaces
 {
     public interface IGetProduct
     {

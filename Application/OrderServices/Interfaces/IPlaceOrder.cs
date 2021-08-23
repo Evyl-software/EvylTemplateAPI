@@ -1,6 +1,6 @@
 ﻿using Domain.Models;
 
-namespace Application.PlaceOrder.Interfaces
+namespace Application.OrderServices.Interfaces
 {
     public interface IPlaceOrder
     {

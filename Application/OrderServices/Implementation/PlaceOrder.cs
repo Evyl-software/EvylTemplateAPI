@@ -1,7 +1,7 @@
-﻿using Application.PlaceOrder.Interfaces;
+﻿using Application.OrderServices.Interfaces;
 using Domain.Models;
 
-namespace Application.PlaceOrder.Implementation
+namespace Application.OrderServices.Implementation
 {
     public class PlaceOrder : IPlaceOrder
     {

@@ -1,7 +1,7 @@
-﻿using Application.Command.Interfaces;
+﻿using Application.ProductServices.Interfaces;
 using Domain.Models;
 
-namespace Application.Query.Implementation
+namespace Application.ProductServices.Implementation
 {
     public class GetProduct : IGetProduct
     {
