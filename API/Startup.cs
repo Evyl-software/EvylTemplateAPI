@@ -33,8 +33,8 @@ namespace Template.API
             services.AddScoped(typeof(IMongoRepository<>), typeof(MongoRepository<>));
 
             services.AddControllers();
-            services.AddSingleton<IGetProduct, GetProduct>();
-            services.AddSingleton<IPlaceOrder, PlaceOrder>();
+            services.AddSingleton<IProductService, ProductService>();
+            services.AddSingleton<IOrderService, OrderService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Template.API", Version = "v1" });
