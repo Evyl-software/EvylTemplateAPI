@@ -25,7 +25,7 @@ namespace API.Controllers
             return Ok(result);
         }
         [HttpDelete]
-        [Route("update")]
+        [Route("delete")]
         public async Task<IActionResult> DeleteProduct(ObjectId id)
         {
             var result = await _productService.DeleteAsync(id);
