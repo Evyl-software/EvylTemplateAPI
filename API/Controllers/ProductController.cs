@@ -3,6 +3,7 @@ using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MongoDB.Bson;
+using Repository;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -12,11 +13,13 @@ namespace API.Controllers
     {
         private readonly ILogger<ProductController> _logger;
         private readonly IProductService _productService;
+        private readonly IMongoRepository<Product> _repository;
 
-        public ProductController(ILogger<ProductController> logger, IProductService productService)
+        public ProductController(ILogger<ProductController> logger, IProductService productService, IMongoRepository<Product> repository)
         {
             _logger = logger;
             _productService = productService;
+            _repository = repository;
         }        
         [HttpGet]        
         public async Task<IActionResult> GetProduct(ObjectId id)
