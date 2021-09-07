@@ -30,7 +30,7 @@ namespace Template.API
             services.AddSingleton<IMongoDbSettings>(serviceProvider =>
                 serviceProvider.GetRequiredService<IOptions<MongoDbSettings>>().Value);
 
-            services.AddScoped(typeof(IMongoRepository<>), typeof(MongoRepository<>));
+            services.AddSingleton(typeof(IMongoRepository<>), typeof(MongoRepository<>));
 
             services.AddControllers();
             services.AddSingleton<IProductService, ProductService>();
